@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 resource "aws_iam_role" "lambda_role" {
-  name               = "terraform_aws_lambda_role_2"
+  name               = "terraform_aws_lambda_role_3"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -34,7 +34,7 @@ EOF
 }
 
 resource "aws_iam_policy" "iam_policy_for_lambda" {
-  name        = "aws_iam_policy_for_terraform_aws_lambda_role_2"
+  name        = "aws_iam_policy_for_terraform_aws_lambda_role_3"
   path        = "/"
   description = "AWS IAM Policy for managing aws lambda role"
   policy      = <<EOF
